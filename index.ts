@@ -9,6 +9,22 @@ function main(): void {
 
   const firstNum = isNumber(num1);
   console.log(firstNum)
+
+  const isOp = isOperater (op)
+  console.log(isOp)
+}
+
+function isOperater(Operater:string):boolean{
+    switch(Operater){
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+            return true 
+        default: 
+            return false    
+    }
+
 }
 
 function isNumber(str: string) {

@@ -9,6 +9,19 @@ function main() {
     console.log(num1, op, num2);
     var firstNum = isNumber(num1);
     console.log(firstNum);
+    var isOp = isOperater(op);
+    console.log(isOp);
+}
+function isOperater(Operater) {
+    switch (Operater) {
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+            return true;
+        default:
+            return false;
+    }
 }
 function isNumber(str) {
     var maybenum = parseInt(str);
